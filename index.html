@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    
+    <title>Document</title>
+    
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    
+   
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    
+    <style>
+
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .kayaimg {
+          
+            width: 400px;
+            height: 200px;
+            border-radius: 20px; 
+            overflow: hidden; 
+        }
+
+    </style>
+</head>
+<body>
+    <img src="top tab.png" alt="top Image" class="top-image">
+     <div class="parent"> 
+        <div class="div1">
+            <img src="EBay_logo.png" height="10%" width="90%">
+            <div class="expandable-container">
+                <p class="expandable-header" onclick="toggleText()">Category   <span id="categoryToggleIcon">+</span></p>
+                <div class="expandable-text" id="categoryExpandableText">
+                    <p>All</p>
+                    <li class="list"></li>
+                    <li>Collectibles &amp; TV Clothing</li>
+                    <li>Shoes &amp; Accessories</li>
+                    <li>Hobbies, Books &amp; Magazines</li>
+                    <li>Show More +</li>
+                </div>
+            </div>
+    
+            <div class="expandable-container">
+                <p class="expandable-header" onclick="togglePriceFilter()">Price  &emsp;&emsp;<span id="priceToggleIcon">+</span></p>
+                <div class="expandable-text" id="priceExpandableText">
+                    <div class="price-filter-container">
+                        <label for="min-price">Min Price</label>
+                        <input type="number" id="min-price" placeholder="0">
+                    </div>
+                    <div class="price-filter-container">
+                        <label for="max-price">Max Price</label>
+                        <input type="number" id="max-price" placeholder="1000">
+                    </div>
+                    <button class="apply-button" onclick="applyPriceFilter()">Apply</button>
+                    <div class="results" id="results"></div>
+                </div>
+            </div>
+            <div class="expandable-container">
+                <p class="expandable-header" onclick="toggleConditionFilter()"> Condition &emsp;&emsp;<span id="conditionToggleIcon">+</span></p>
+                <div class="expandable-text" id="conditionExpandableText">
+                    <ul>
+                        <li>
+                            <input type="checkbox" id="excellent" value="excellent">
+                            <label for="excellent">Excellent</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="good" value="good">
+                            <label for="good">Good</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="fair" value="fair">
+                            <label for="fair">Fair</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="poor" value="poor">
+                            <label for="poor">Poor</label>
+                        </li>
+                    </ul>
+                    <button class="expandable-button" onclick="applyConditionFilter()">Apply Filter</button>
+                </div>
+            </div>
+        </div>
+
+    <div class="div2"> <div class="search-container"></class>
+        <input type="text" placeholder="Kaya!!!" class="search-input">
+        <button class="search-button">Search</button>
+        <paragraph class = "p"></class>
+       <p> Advanced </p>
+        </div>
+        <div class="div3">
+            <ul class="blue-underlined-list">
+                <li>Related: Horror, Cats, Mustaches, Shades of Dark Purple, Snails!!!!!</li>
+            </ul>
+            <div class="results-container">
+                <p class="results-count">444,444+ results for Kaya</p>
+                <p class="save-search">Save this Search</p>
+                <p class="shipping"> Shipping to <p class= "shipping2"> 91355</p>
+            </div>
+            <button class="autionbutton">All</button>
+            <button class="autionbutton">Auction</button>
+            <button class="autionbutton">Buy It Now</button>
+            <hr class="divider">
+            <div class="item-container">
+                <img src="IMG_5935 2.jpg" alt="drpepper Image" class="item-image">
+                <div class="item-details">
+                    <h2 class="item-title">XXXL Dr Pepper</h2>
+                    <p class="owned">Pre-Owned</p>
+                    <div class="item-rating">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span>(11.0)</span>
+                        <p class="review-underline">2004 Product Ratings</p>
+                    </div>
+                    <p class="item-price">$999999999999.99</p>
+                    <div class="item-options">
+                        <ul>
+                            <li>Buy it Now</li>
+                            <li>Free Shipping</li>
+                        </ul>
+                        <p class="sold-amount">20 sold</p>
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="divider">
+
+        <div class="div4">
+            <div class="item-container">
+                <img src="IMG_2243 2.JPG" alt="beans Image" class="item-image">
+                <div class="item-details">
+                    <h2 class="item-title"> Side of Beans</h2>
+                    <p class="owned"> Brand New !</p>
+                    <div class="item-rating">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="nostar">&#9733;</span>
+                        <span class="nostar">&#9733;</span>
+                        <span class="nostar">&#9733;</span>
+                        <span>(2.0)</span>
+                        <p class="review-underline">420 Product Ratings</p>
+                    </div>
+                    <p class="item-price">$3.29</p>
+                    <div class="item-options">
+                        <ul>
+                            <li>Buy it Now</li>
+                            <li>Free Shipping</li>
+                        </ul>
+                        <p class="sold-amount">2 sold</p>
+
+        
+                    
+                    </div>
+                </div>
+            </div>
+            <hr class="divider"></div>
+                <div class="item-container">
+                    <img src="IMG_7747.jpg" alt="griddle Image" class="item-image">
+                    <div class="item-details">
+                        <h2 class="item-title">MCGRIDDLEEEEEEE</h2>
+                    <p class="owned">Pre-Owned</p>
+                    <div class="item-rating">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="nostar">&#9733;</span>
+                        <span>(4.0)</span>
+                        <p class="review-underline">1 Product Ratings</p>
+                    </div>
+                        <p class="item-price">$1000000000000000000000.00</p>
+                        <div class="item-options">
+                            <ul>
+                                <li>Buy it Now</li>
+                                <li>$45 Shipping</li>
+                            </ul>
+                            <p class="sold-amount">0 sold</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            
+    
+        
+        <div class="div5"></div>
+        <div class="div6">
+            
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <hr class="divider"></div>
+        <div class="div7"> </div>
+        <div class="div8"> 
+            <div class="ul-bottom">
+                <ul>eBay </ul>
+                <ul>Announcements </ul>
+                <ul>Community </ul>
+                <ul>Security Center </ul>
+                <ul>Seller Center </ul>
+                <ul>Policies  Affiliates & Contact</ul>
+                <ul> Site Map </ul> 
+            </div>
+            <img src="Screenshot 2024-11-13 at 11.01.45 AM.png" alt="bottom-image" class="bottom-image">
+      </div>
+
+        
+    <script>
+
+        function toggleText() {
+            var text = document.getElementById("categoryExpandableText");
+            var icon = document.getElementById("categoryToggleIcon");
+            if (text.style.display === "none" || text.style.display === "") {
+                text.style.display = "block";
+                icon.textContent = "-";
+            } else {
+                text.style.display = "none";
+                icon.textContent = "+";
+            }
+        }
+
+        function togglePriceFilter() {
+            var priceText = document.getElementById("priceExpandableText");
+            var icon = document.getElementById("priceToggleIcon");
+            if (priceText.style.display === "none" || priceText.style.display === "") {
+                priceText.style.display = "block";
+                icon.textContent = "-";
+            } else {
+                priceText.style.display = "none";
+                icon.textContent = "+";
+            }
+        }
+
+        function toggleConditionFilter() {
+            var text = document.getElementById("conditionExpandableText");
+            var icon = document.getElementById("conditionToggleIcon");
+            if (text.style.display === "none" || text.style.display === "") {
+                text.style.display = "block";
+                icon.textContent = "-";
+            } else {
+                text.style.display = "none";
+                icon.textContent = "+";
+            }
+        }
+
+        function applyConditionFilter() {
+            var selectedConditions = [];
+            var checkboxes = document.querySelectorAll('.expandable-text input[type="checkbox"]:checked');
+            
+            checkboxes.forEach(function(checkbox) {
+                selectedConditions.push(checkbox.value);
+            });
+
+            if (selectedConditions.length > 0) {
+                alert("Selected conditions: " + selectedConditions.join(', '));
+            } else {
+                alert("MMMM yeah no conditions selected.");
+            }
+        }
+
+        
+        window.onload = function() {
+           
+            document.getElementById("categoryExpandableText").style.display = "block";
+            document.getElementById("priceExpandableText").style.display = "block";
+            document.getElementById("conditionExpandableText").style.display = "block";
+            
+            document.getElementById("categoryToggleIcon").textContent = "-";
+            document.getElementById("priceToggleIcon").textContent = "-";
+            document.getElementById("conditionToggleIcon").textContent = "-";
+        }
+ </script>       
+</body>
+</html>
